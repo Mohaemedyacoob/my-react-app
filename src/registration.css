@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(30, 0, 36);
+    background: linear-gradient(45deg, rgba(30, 0, 36, 0.7567401960784313) 0%, rgba(182, 95, 201, 0.9976365546218487) 0%, rgba(0, 95, 255, 0.7175245098039216) 100%);
+}
+
+.registration-container {
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group label i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.input-group input {
+    width: 100%; /* Make input take the full width */
+    padding: 10px;
+    padding-right: 30px; /* Add padding to make space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-icon {
+    position: absolute;
+    right: 20px; 
+    left: 90%;
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-4%); /* Adjust for better centering */
+    font-size: 22px;
+    color: grey; /* Default color (grey) */
+}
+
+.email-icon.valid {
+    color: green; /* Green when the email is valid */
+}
+
+.email-icon.invalid {
+    color: rgb(90, 80, 80); /* Red/gray for invalid email */
+}
+
+/* Style for the button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Login section for redirecting user to the login page */
+.login-section {
+    margin-top: 20px;
+}
+
+.login-section p {
+    margin: 0;
+    color: #666;
+}
+
+.login-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
+
+.light-grey-icon {
+    color: #b4b4b4; /* Light grey color for default */
+}

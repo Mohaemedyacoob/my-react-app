@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(30,0,36);
+    background: linear-gradient(45deg, rgba(30,0,36,0.7567401960784313) 0%, rgba(182,95,201,0.9976365546218487) 0%, rgba(0,95,255,0.7175245098039216) 100%);
+}
+
+.login-container {
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40%;
+    color: rgba(0, 0, 0, 0.856); /* Lighter shade for the heading */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: lighter;
+    color: rgba(46, 42, 42, 0.89); 
+}
+
+.input-group label i {
+    margin-right: 10px;
+    color: #494a4d;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 15px;
+    color: rgba(0, 123, 255, 0.8); /* Lighter blue color for the forgot password link */
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-section {
+    margin-top: 20px;
+}
+
+.signup-section p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6); /* Lighter shade for paragraph text */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6); /* Lighter shade for social icon links */
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.signup-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-section a:hover {
+    text-decoration: underline;
+}
+/* For the username icon */
+.input-group label i.fas.fa-user {
+    color: #3f3f3f; /* Blue color */
+}
+
+/* For the password icon */
+.input-group label i.fas.fa-lock {
+    color: #3f3f3f; /* Red color */
+}
+
+/* For the email icon */
+.input-group label i.fas.fa-envelope {
+    color: #3f3f3f; /* Green color */
+}
+
+/* For the envelope icon based on validity (in registration form) */
+.email-icon.valid i.fas.fa-envelope {
+    color: green; /* Green color for valid email */
+}
+
+.email-icon.invalid i.fas.fa-envelope {
+    color: red; /* Red color for invalid email */
+}
+a{
+ text-decoration: none;
+ color: white;
+}
+
