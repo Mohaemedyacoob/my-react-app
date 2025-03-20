@@ -1,91 +1,67 @@
-.profile-container {
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(33,20,180);
+  background: linear-gradient(90deg, rgba(33,20,180,1) 0%, rgba(78,136,182,1) 49%, rgba(203,53,167,0.9472163865546218) 100%);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
   display: flex;
-  width: 100%;
-  max-width: 900px;
-  margin: 50px auto; 
-  padding: 20px;
-  background: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
 }
-    
-.profile-sidebar {
-  width: 30%;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 1030px;
+  height: fit-content;
+  width: 1800px;
+  margin-left: 270px;
 }
 
-.profile-pic-wrapper {
-  position: relative;
-  display: inline-block;
+.profile-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 250px;
+  flex-shrink: 0;
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; /* Makes image circular */
-  object-fit: cover; /* Ensures it fills the area */
-  border: 3px solid #ddd; /* Optional border */
-}
-
-.edit-icon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background: white;
-  padding: 5px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
-  color: #007bff;
+  object-fit: cover;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.file-input {
-  display: none;
+.upload-hint {
+  font-size: 0.85rem;
+  color: black;
+  margin-top: 5px;
+  text-align: center;
 }
 
-.public-profile-btn {
-  background: blue;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+.homepage-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.profile-content {
-  width: 70%;
-  padding: 40px;
-}
-
-.tabs {
+.homepage-container form {
   display: grid;
-  border-bottom: 2px solid #ddd;
-}
-
-.tabs span {
-  padding: 10px 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.tabs .active {
-  color: blue;
-  border-bottom: 2px solid blue;
-}
-
-.profile-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 25px;
-  margin-top: 20px;
+  width: 80%;
 }
 
 .input-group {
@@ -95,27 +71,60 @@
 
 .input-group label {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .input-group input,
 .input-group select {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 6px;
+}
+
+.button-group {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 button {
-  grid-column: span 2;
-  padding: 10px;
-  background: blue;
-  color: white;
+  padding: 10px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-button:hover {
-  background: darkblue; /* Fixed */
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #1e7e34;
+}
+
+.login-link {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
 }

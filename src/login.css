@@ -6,8 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(30,0,36);
-    background: linear-gradient(45deg, rgba(30,0,36,0.7567401960784313) 0%, rgba(182,95,201,0.9976365546218487) 0%, rgba(0,95,255,0.7175245098039216) 100%);
+    background: rgb(121, 171, 204);
+    background: linear-gradient(45deg, rgba(181, 90, 199, 0.757) 0%, rgba(54, 148, 155, 0.998) 0%, rgba(0,95,255,0.7175245098039216) 100%);
 }
 
 .login-container {
