@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,53 +7,86 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(121, 171, 204);
-    background: linear-gradient(45deg, rgba(181, 90, 199, 0.757) 0%, rgba(54, 148, 155, 0.998) 0%, rgba(0,95,255,0.7175245098039216) 100%);
+    background: linear-gradient(45deg, rgba(181, 90, 199, 0.757) 0%, rgba(54, 148, 155, 0.998) 0%, rgba(0,95,255,0.717) 100%);
 }
 
 .login-container {
     background-color: white;
-    padding: 60px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 350px;
     text-align: center;
 }
 
 h2 {
-    margin-bottom: 40%;
-    color: rgba(0, 0, 0, 0.856); /* Lighter shade for the heading */
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.85);
 }
 
+/* Input Group */
 .input-group {
     margin-bottom: 15px;
-    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Label & Icons */
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: lighter;
-    color: rgba(46, 42, 42, 0.89); 
+    font-weight: normal;
+    color: rgba(46, 42, 42, 0.89);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
 }
 
 .input-group label i {
-    margin-right: 10px;
-    color: #494a4d;
+    font-size: 16px;
+    color: #007bff;
 }
 
+/* Input Fields */
 .input-group input {
     width: 100%;
     padding: 10px;
+    padding-left: 35px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
+    font-size: 14px;
 }
 
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 35px;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+    font-size: 16px;
+}
+
+/* Forgot Password */
 .forgot-password {
     display: block;
     text-align: right;
     margin-bottom: 15px;
-    color: rgba(0, 123, 255, 0.8); /* Lighter blue color for the forgot password link */
+    color: rgba(0, 123, 255, 0.8);
     text-decoration: none;
 }
 
@@ -60,6 +94,7 @@ h2 {
     text-decoration: underline;
 }
 
+/* Login Button */
 button {
     width: 100%;
     padding: 10px;
@@ -79,22 +114,24 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Signup Section */
 .signup-section {
     margin-top: 20px;
 }
 
 .signup-section p {
     margin: 0;
-    color: rgba(0, 0, 0, 0.6); /* Lighter shade for paragraph text */
+    color: rgba(0, 0, 0, 0.6);
 }
 
+/* Social Icons */
 .social-icons {
     margin-top: 10px;
 }
 
 .social-icons a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.6); /* Lighter shade for social icon links */
+    color: rgba(0, 0, 0, 0.6);
     margin: 0 10px;
     font-size: 20px;
 }
@@ -111,31 +148,3 @@ button:hover {
 .signup-section a:hover {
     text-decoration: underline;
 }
-/* For the username icon */
-.input-group label i.fas.fa-user {
-    color: #3f3f3f; /* Blue color */
-}
-
-/* For the password icon */
-.input-group label i.fas.fa-lock {
-    color: #3f3f3f; /* Red color */
-}
-
-/* For the email icon */
-.input-group label i.fas.fa-envelope {
-    color: #3f3f3f; /* Green color */
-}
-
-/* For the envelope icon based on validity (in registration form) */
-.email-icon.valid i.fas.fa-envelope {
-    color: green; /* Green color for valid email */
-}
-
-.email-icon.invalid i.fas.fa-envelope {
-    color: red; /* Red color for invalid email */
-}
-a{
- text-decoration: none;
- color: white;
-}
-

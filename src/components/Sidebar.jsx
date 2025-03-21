@@ -3,7 +3,6 @@ import { FaChartBar, FaEnvelope, FaShoppingCart, FaUser, FaBars, FaAngleLeft } f
 import './Sidebar.css';
 import { Link, useLocation } from 'react-router-dom';
 
-
 const Sidebar = () => {
   const [isMinimized, setIsMinimized] = useState(window.innerWidth < 768);
   const location = useLocation(); // Get current route
@@ -19,7 +18,7 @@ const Sidebar = () => {
   return (
     <div className={`sidebar ${isMinimized ? 'minimized' : ''}`}>
       <div className="sidebar-header">
-        {!isMinimized && <div className="logo">Dashboard</div>}
+        {!isMinimized && <div className="logo">ERM</div>}
         <button className="toggle-btn" onClick={toggleSidebar} aria-label="Toggle Sidebar">
           {isMinimized ? <FaBars /> : <FaAngleLeft />}
         </button>
@@ -29,25 +28,25 @@ const Sidebar = () => {
         <li className={location.pathname === "/profile" ? "active" : ""}>
           <Link to="/profile">
             <FaUser />
-            {!isMinimized && <span>     Profile</span>}
+            {!isMinimized && <span>      Profile</span>}
           </Link>
         </li>
         <li className={location.pathname === "/analytics" ? "active" : ""}>
-          <Link to="/analytics">
+          <Link to="/dashboard">
             <FaChartBar />
-            {!isMinimized && <span>     Analytics</span>}
+            {!isMinimized && <span>      Analytics</span>}
           </Link>
         </li>
         <li className={location.pathname === "/mail" ? "active" : ""}>
           <Link to="/mail">
             <FaEnvelope />
-            {!isMinimized && <span>    Mail</span>}
+            {!isMinimized && <span>     Mail</span>}
           </Link>
         </li>
         <li className={location.pathname === "/sales" ? "active" : ""}>
           <Link to="/sales">
             <FaShoppingCart />
-            {!isMinimized && <span>    Sales</span>}
+            {!isMinimized && <span>     Sales</span>}
           </Link>
         </li>
       </ul>

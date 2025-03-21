@@ -1,5 +1,5 @@
 .sidebar {
-  width: 220px;
+  width: 180px;
   height: 100vh;
   background: #0f0f2f;
   color: white;
@@ -11,7 +11,7 @@
   left: 0;
   top: 0;
   z-index: 1000;
-  transition: width 0.3s ease-in-out; /* Smooth transition */
+  transition: width 0.3s ease-in-out;
   font-size: 18px; 
   border-radius: 10px;
 }
@@ -19,6 +19,7 @@
 .sidebar.minimized {
   width: 60px;
 }
+
 
 .sidebar-header {
   display: flex;
@@ -33,7 +34,7 @@
 }
 
 .sidebar.minimized .logo {
-  opacity: 0; /* Hide text when minimized */
+  opacity: 0;
 }
 
 .toggle-btn {
@@ -41,12 +42,14 @@
   border: none;
   color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px; /* Reduce font size */
+  padding: 8px; /* Reduce padding */
   transition: transform 0.3s ease-in-out;
 }
 
+
 .sidebar.minimized .toggle-btn {
-  transform: rotate(180deg); /* Rotate button when minimized */
+  transform: rotate(180deg);
 }
 
 .menu {
@@ -61,6 +64,7 @@
   padding: 20px;
   cursor: pointer;
   gap: 10px;
+  color: white;
 }
 
 .menu li:hover,
@@ -72,4 +76,15 @@
 /* Hide text when minimized */
 .sidebar.minimized .menu li span {
   display: none;
+}
+
+/* Ensure icons and text are white */
+.menu li i {
+  color: white; 
+}
+
+/* Remove underline from sidebar links */
+.menu li a {
+  text-decoration: none !important;
+  color: white;
 }

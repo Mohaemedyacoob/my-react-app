@@ -5,6 +5,7 @@ import './login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -14,11 +15,8 @@ const Login = () => {
 
     if (storedUser && email === storedUser.email && password === storedUser.password) {
       alert("Login successful!");
-      
-      // ✅ Store authentication state
-      localStorage.setItem("authToken", "sample_token"); 
-
-      navigate("/profile"); // ✅ Redirect to profile
+      localStorage.setItem("authToken", "sample_token");
+      navigate("/profile");
     } else {
       alert("Invalid credentials. Please try again.");
     }
@@ -42,21 +40,26 @@ const Login = () => {
           />
         </div>
 
-        <div className="input-group">
+        <div className="input-group password-group">
           <label htmlFor="password">
             <i className="fas fa-lock"></i> Password
           </label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+          <div className="password-wrapper">
+            <input
+              type={showPassword ? "text" : "password"}
+              id="password"
+              placeholder="Enter password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <i 
+              className={`fas ${showPassword ? "fa-eye-slash" : "fa-eye"}`} 
+              onClick={() => setShowPassword(!showPassword)}
+            ></i>
+          </div>
         </div>
 
-        {/* ✅ Fix incorrect href */}
         <Link to="/forgetpassword" className="forgot-password">
           Forgot password?
         </Link>

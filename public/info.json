@@ -1,0 +1,79 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "role": "Software Engineer",
+        "department": "IT",
+        "salary": 50000,
+        "status": "Active",
+        "attendance": [
+          { "month": "Jan", "daysPresent": 20, "leaves": 2 },
+          { "month": "Feb", "daysPresent": 18, "leaves": 3 },
+          { "month": "Mar", "daysPresent": 22, "leaves": 1 },
+          { "month": "Apr", "daysPresent": 21, "leaves": 2 },
+          { "month": "May", "daysPresent": 20, "leaves": 3 },
+          { "month": "Jun", "daysPresent": 19, "leaves": 4 },
+          { "month": "Jul", "daysPresent": 23, "leaves": 1 },
+          { "month": "Aug", "daysPresent": 21, "leaves": 2 },
+          { "month": "Sep", "daysPresent": 20, "leaves": 3 },
+          { "month": "Oct", "daysPresent": 22, "leaves": 1 },
+          { "month": "Nov", "daysPresent": 19, "leaves": 4 },
+          { "month": "Dec", "daysPresent": 21, "leaves": 2 }
+        ],
+        "performance": [
+          { "month": "Jan", "rating": 4.5, "goalsAchieved": 90 },
+          { "month": "Feb", "rating": 4.2, "goalsAchieved": 85 },
+          { "month": "Mar", "rating": 4.7, "goalsAchieved": 95 },
+          { "month": "Apr", "rating": 4.3, "goalsAchieved": 87 },
+          { "month": "May", "rating": 4.1, "goalsAchieved": 82 },
+          { "month": "Jun", "rating": 4.6, "goalsAchieved": 93 },
+          { "month": "Jul", "rating": 4.8, "goalsAchieved": 96 },
+          { "month": "Aug", "rating": 4.4, "goalsAchieved": 89 },
+          { "month": "Sep", "rating": 4.2, "goalsAchieved": 85 },
+          { "month": "Oct", "rating": 4.7, "goalsAchieved": 94 },
+          { "month": "Nov", "rating": 4.0, "goalsAchieved": 80 },
+          { "month": "Dec", "rating": 4.5, "goalsAchieved": 91 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "role": "HR Manager",
+        "department": "HR",
+        "salary": 60000,
+        "status": "Active",
+        "attendance": [
+          { "month": "Jan", "daysPresent": 21, "leaves": 1 },
+          { "month": "Feb", "daysPresent": 19, "leaves": 2 },
+          { "month": "Mar", "daysPresent": 22, "leaves": 1 },
+          { "month": "Apr", "daysPresent": 20, "leaves": 2 },
+          { "month": "May", "daysPresent": 18, "leaves": 4 },
+          { "month": "Jun", "daysPresent": 20, "leaves": 3 },
+          { "month": "Jul", "daysPresent": 22, "leaves": 1 },
+          { "month": "Aug", "daysPresent": 21, "leaves": 2 },
+          { "month": "Sep", "daysPresent": 20, "leaves": 3 },
+          { "month": "Oct", "daysPresent": 22, "leaves": 1 },
+          { "month": "Nov", "daysPresent": 18, "leaves": 4 },
+          { "month": "Dec", "daysPresent": 21, "leaves": 2 }
+        ],
+        "performance": [
+          { "month": "Jan", "rating": 4.3, "goalsAchieved": 85 },
+          { "month": "Feb", "rating": 4.1, "goalsAchieved": 80 },
+          { "month": "Mar", "rating": 4.6, "goalsAchieved": 92 },
+          { "month": "Apr", "rating": 4.2, "goalsAchieved": 83 },
+          { "month": "May", "rating": 4.0, "goalsAchieved": 78 },
+          { "month": "Jun", "rating": 4.5, "goalsAchieved": 90 },
+          { "month": "Jul", "rating": 4.7, "goalsAchieved": 95 },
+          { "month": "Aug", "rating": 4.3, "goalsAchieved": 85 },
+          { "month": "Sep", "rating": 4.1, "goalsAchieved": 80 },
+          { "month": "Oct", "rating": 4.6, "goalsAchieved": 92 },
+          { "month": "Nov", "rating": 3.9, "goalsAchieved": 75 },
+          { "month": "Dec", "rating": 4.4, "goalsAchieved": 88 }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,61 @@
+/* Target the specific div */
+.dashboard-content {
+    background-color: white !important; /* Set background to white */
+    width: 100%;
+    max-width: 1100px; /* Adjust width for better fit */
+    margin: auto; /* Center it */
+    padding: 20px;
+    min-height: 100vh; /* Ensure it covers the full height */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+}
+
+/* Adjust parent container if needed */
+.dashboard-container {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh; /* Ensure full screen height */
+    background-color: white; /* Keep background consistent */
+}
+
+/* Fixing Sidebar & Content Layout */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px; /* Adjust sidebar width */
+    min-height: 100vh; /* Make sidebar full height */
+    background: #1a1a2e; /* Sidebar color */
+    color: white;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .dashboard-content {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack sidebar on small screens */
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .dashboard-content {
+        max-width: 100%;
+        padding: 15px;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaPen } from 'react-icons/fa'; // Importing edit icon
 import './profile.css';
+import profilePicDefault from "../assets/pr3.jpg"; // Correct import
 
 const ProfilePage = () => {
   const [firstName, setFirstName] = useState('John');
@@ -12,7 +13,7 @@ const ProfilePage = () => {
   const [password, setPassword] = useState('password123');
   const [isEditing, setIsEditing] = useState(false);
   const [emailValid, setEmailValid] = useState(null);
-  const [profilePic, setProfilePic] = useState(null); // Default profile image
+  const [profilePic, setProfilePic] = useState(profilePicDefault); // Default profile image
   const [isSidebarMinimized, setIsSidebarMinimized] = useState(false);
 
   // Detect sidebar state and adjust layout
@@ -63,14 +64,14 @@ const ProfilePage = () => {
     <div
       className="profile-wrapper"
       style={{
-        marginLeft: isSidebarMinimized ? '80px' : '270px',
+        marginLeft: isSidebarMinimized ? '80px' : '220px',
         transition: 'margin-left 0.3s ease',
       }}
     >
       {/* Profile Picture Section */}
       <div className="profile-pic-container">
         <label htmlFor="profile-upload" className="profile-label">
-          <img src={profilePic || require('./pr3.jpg')} alt="Profile" className="profile-pic" />
+          <img src={profilePic} alt="Profile" className="profile-pic" />
           <FaPen className="edit-icon" />
         </label>
         <input
